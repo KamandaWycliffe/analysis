@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Wycliffe Kamanda. Nice to meet you
 - 👀 I’m interested in technology, cyber security, and all aspects of data integration into security and technology products.
-- ![image](https://user-images.githubusercontent.com/52254541/133409306-5cdb5698-87e3-481a-87eb-b388200f0b33.png) I have been working with developing databases, 
+- 👨‍💻 I have been working with developing databases, building ML models, business intelligence dashboards, and other technology products
 - 🌱 Currently I am learning on advanced penetration testing 
 - 💞️ I’m looking to collaborate on developing enterprise products related to technology and security
       reinforcement on technology products including desktop application, web applications, server magement, and network monitoring.

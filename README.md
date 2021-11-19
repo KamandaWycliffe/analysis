@@ -4,7 +4,7 @@
 - 🌱 Currently I am learning on advanced penetration testing 
 - 💞️ I’m looking to collaborate on developing enterprise products related to technology and security
       reinforcement on technology products including desktop application, web applications, server magement, and network monitoring.
-- 📫 Reach me by email dataandtech@proton.ch or mongarewyclif2@gmail.com 
+- 📫 Reach me by email dataandtech@proton.ch
 
 <!---
 Wyclefo/Wyclefo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

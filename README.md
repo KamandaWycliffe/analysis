@@ -2,7 +2,7 @@
 - 👀 I’m interested in technology, cyber security, and all aspects of data integration into security and technology products.
 - 👨‍💻 I have been working with developing databases, building ML models, business intelligence dashboards, and other technology products
 - 🌱 Currently I am learning on advanced penetration testing 
-- 💞️ I’m looking to collaborate on any data related project
+- 💞️ I’m looking to collaborate on data related projects.
 - 📫 Reach me by email kamandawyclif3@gmail.com
 
 <!---

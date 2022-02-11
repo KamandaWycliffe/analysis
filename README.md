@@ -2,9 +2,8 @@
 - 👀 I’m interested in technology, cyber security, and all aspects of data integration into security and technology products.
 - 👨‍💻 I have been working with developing databases, building ML models, business intelligence dashboards, and other technology products
 - 🌱 Currently I am learning on advanced penetration testing 
-- 💞️ I’m looking to collaborate on developing enterprise products related to technology and security
-      reinforcement on technology products including desktop application, web applications, server magement, and network monitoring.
-- 📫 Reach me by email dataandtech@proton.ch
+- 💞️ I’m looking to collaborate on any data related project
+- 📫 Reach me by email kamandawyclif3@gmail.com
 
 <!---
 Wyclefo/Wyclefo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

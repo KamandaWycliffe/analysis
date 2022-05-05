@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Wycliffe Kamanda. A Certified Ethical Hacker and Data Scientist
+- 👋 Hi, I’m Kamanda. A Certified Ethical Hacker and Data Scientist
 
 <!---
 Wyclefo/Wyclefo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

@@ -1,9 +1,4 @@
-- 👋 Hi, I’m @Wycliffe Kamanda. Nice to meet you
-- 👀 I’m interested in technology, cyber security, and all aspects of data integration into security and technology products.
-- 👨‍💻 I have been working with developing databases, building ML models, business intelligence dashboards, and other technology products
-- 🌱 Currently I am learning on advanced penetration testing 
-- 💞️ I’m looking to collaborate on data related projects.
-- 📫 Reach me by email kamandawyclif3@gmail.com
+- 👋 Hi, I’m @Wycliffe Kamanda. A Certified Ethical Hacker and Data Scientist
 
 <!---
 Wyclefo/Wyclefo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

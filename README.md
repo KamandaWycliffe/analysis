@@ -1,5 +1,5 @@
-- 👋 Hi, I’m Kamanda. 
-- A Certified Ethical Hacker and Data Scientist
+- 👋 Hi, I’m Kamanda Wycliffe. 
+- A Certified Ethical Hacker
 - Email me for business kamandawyclif2@gmail.com
 
 <!---

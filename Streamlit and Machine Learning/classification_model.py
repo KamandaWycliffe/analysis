@@ -5,6 +5,8 @@ from PIL import Image
 
 from matplotlib import image
 from matplotlib import pyplot
+import warnings 
+warnings.filterwarnings('ignore')
 import pandas as pd
 import numpy as np
 import os
@@ -22,31 +24,32 @@ import random
 #generate dataset
 IMG_WIDTH=200
 IMG_HEIGHT=200
-img_path=r'\home\kamanda\Downloads\training_set\training_set'
-
+img_path='train'
+#generate dataset
+IMG_WIDTH=200
+IMG_HEIGHT=200
+img_path='train1/'
 def generate_dataset(img_path):
-   
     img_data_array=[]
     class_name=[]
-    
-    for dir1 in os.listdir(img_path):
-        print("Collecting images for: ",dir1)
-        for file in os.listdir(os.path.join(img_path, dir1)):
-       
-            image_path = os.path.join(img_path, dir1,  file)
-            image = cv2.imread( image_path, cv2.COLOR_BGR2RGB)
-            try:
-                image = cv2.resize(image, (IMG_HEIGHT, IMG_WIDTH),interpolation = cv2.INTER_AREA)
-            except:
-                break
-            image = np.array(image)
-            image = image.astype('float32')
-            image /= 255 
-            img_data_array.append(image)
-            class_name.append(dir1)
+    for file in os.listdir(os.path.join(img_path)):
+        image = cv2.imread( img_path+file, cv2.COLOR_BGR2RGB)
+        try:
+            image = cv2.resize(image, (IMG_HEIGHT, IMG_WIDTH),interpolation = cv2.INTER_AREA)
+        except:
+            break
+        image = np.array(image)
+        image = image.astype('float32')
+        image /= 255 
+        img_data_array.append(image)
+        # determine class
+        output = 0
+        if file.startswith('dog'):
+            output = 1
+        class_name.append(output)
     return img_data_array, class_name
-# extract the image array and class name
-img_data, class_name =generate_dataset(img_path)
+# Get the image array and class name
+img_data, class_name = generate_dataset(img_path)
 
 '''Convert to array'''
 img_data=np.array(img_data)
@@ -75,8 +78,6 @@ def model():
     model.add(Dropout(0.2))
     model.add(Dense(1,activation='sigmoid'))
     return model
-
-
 model = model()
 #check structure
 #model.summary()
@@ -85,37 +86,6 @@ conv_base.trainable = False
 model.compile(optimizer = 'adam', 
               loss = 'binary_crossentropy', 
               metrics = ['accuracy'])
-model.fit(x = img_data,y = class_name, epochs = 10)
-'''Evaluate performance'''
-IMG_WIDTH = 200
-IMG_HEIGHT = 200
-img_path =  r'\home\kamanda\Downloads\test_set\test_set'
-
-
-# extract the image array and class name
-img_data_test, class_name_test = generate_dataset(r'\home\kamanda\Downloads\test_set\test_set')
-
-img_data_test = np.array(img_data_test)
-class_name_test = list(map(dog_cat_mapping,class_name_test))
-class_name_test = np.array(class_name_test)
-#make predictions
-preds = model.predict(img_data_test).round().astype(int)
-flat_pred = [item for sublist in preds for item in sublist]
-from sklearn.metrics import accuracy_score
-accuracy = accuracy_score(class_name_test, flat_pred)
-
-print("The Accuracy is: %2f" % accuracy)
-
-#incorrect predictions
-incorrects = np.nonzero(model.predict(img_data_test).round().astype(int).reshape((-1,)) != class_name_test)
-
-#Save the model
-from keras.models import load_model
-
-model.save('catdog.h5')  # generates a HDF5 file 'your_model.h5'
-from keras.models import save_model
-#model = save_model(model,'/cat_dog.h5')
-IMG_WIDTH=20
-IMG_HEIGHT=200
-#img_path='\home\kamanda\Downloads\test_set\test_set'
-model.save('./models_catdog', save_format='tf')
+model.fit(x = img_data,y = class_name, epochs = 2)
+#save the model
+model.save('catdog.h5', save_format='tf')

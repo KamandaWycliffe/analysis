@@ -1,11 +1,9 @@
 import streamlit as st
 st.set_option('deprecation.showPyplotGlobalUse', False)
-from transformers import pipeline
 
 st.title('Password Strength Calculator')
 
 import streamlit as st
-from transformers import pipeline
 #function to compute Shannon entropy score
 import re
 import string

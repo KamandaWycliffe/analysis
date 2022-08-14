@@ -43,4 +43,16 @@ password = st.text_input('Enter your password', type = "password")
     
 if st.button('Compute'):
     result = entropy(password)
-    st.write('Password strength: %s' % result)
+    if result < 50:
+        st.write('Terribly weak password. Password strength: %s' % result)
+    elif result < 60:
+        st.write('You can do a tinsy better. Password strength: %s' % result)
+        
+    elif result < 70:
+        st.write("Almost there, add a few more characters, 2 maybe?. Password strength: %s" % result)
+    elif result < 80:
+        st.write('Great choice!. Password strength: %s' % result)
+    elif result < 100:
+         st.write('Very strong password!. Password strength: %s' % result)
+    else:
+        st.write('That was an overkill :). Password strength: %s' % result)

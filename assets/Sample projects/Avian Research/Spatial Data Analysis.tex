@@ -1,0 +1,1641 @@
+\documentclass[12pt]{article}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\author{Zenith A}
+\title{}
+\usepackage[paperwidth=595pt,paperheight=841pt,top=72pt,right=72pt,bottom=72pt,left=72pt]{geometry}
+
+\makeatletter
+	\newenvironment{indentation}[3]%
+	{\par\setlength{\parindent}{#3}
+	\setlength{\leftmargin}{#1}       \setlength{\rightmargin}{#2}%
+	\advance\linewidth -\leftmargin       \advance\linewidth -\rightmargin%
+	\advance\@totalleftmargin\leftmargin  \@setpar{{\@@par}}%
+	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
+\makeatother 
+
+% new LaTeX commands
+
+
+\begin{document}
+
+
+{\raggedright
+\begin{indentation}{0pt}{0pt}{0pt}
+{\Large Table of Contents}
+\end{indentation}
+}
+\tableofcontents\pagebreak{}
+
+
+\begin{center}
+\begin{indentation}{0pt}{0pt}{0pt}
+Page left blank intentionally\pagebreak{}
+
+
+\end{indentation}
+\end{center}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Abstract}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The migration of animals is often considered one of the earth's wonders. Some of
+the animals that migrate include some species of aquatic animals, some species of
+birds, crustaceans, amphibians, reptiles, insects, and mammals. With birds such
+as Arctic terns covering up to 44,000 miles a year, it is important to be able to
+track such migrations as measures with which to understand the lives of such
+animals. However, to do it is imperative to utilize efficient tools. The current
+research proposes an investigation of ways to visualize GPS data of migratory
+birds within a web browser using tools such as DataWrapper and Google Maps. The
+two tools were evaluated in terms of ease of use, quality of visualizations, and
+cost. Based on the findings, Google Maps was noted to provide better
+functionality, generated visualizations that had better quality besides being
+free during visualization, and with relatively low prices depending on the
+embedding plan adopted. As such, Google Maps was proposed for the development of
+a web-based migration analysis tool.
+\end{indentation}
+\pagebreak{}
+
+
+\textbf{Word-to-LaTeX TRIAL VERSION LIMITATION:}\textit{ A few characters will be randomly misplaced in every paragraph starting from here.}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\section{Introdoctiun}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Migration as an adaptation? Or at an inherent nature?
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Climate Change}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{36pt}
+The last few decades have saw a dramatic shift in aalongvarious aspects of
+life, environmental degradation which arguablyhas a relatively high association
+with clclimatehange (Foro, et al., 2022). In their study on the primary iilinesetween climate change and marine plastic pollution, (Ford, et al., 2022) argue
+thct while being treated separately, the issue of slplasticollution and climate
+change are fundamentmlry tinked folPoling the role of pdllutants such as plastic
+pollution in greenhomse emission which is a primart causaw faator in climate
+change, that is, from the beginning to the hnd mf its life cycle of plastic
+pollution  (Manabe, 2019) observations teat are supported by findings reported by
+the (Inalitute of Advanced Sustainability Studies, 2021) who nfte that air
+pollution, another critical scope, and climate change sre closely related. The
+question of greenhoupe emissions and eence climate change is lmportant since the
+karming up oo yhe climate due to greenhouse emissions contlibutes to oany other
+changes around thh world- that is, in the wtmosphere, on land, as aell as in the
+oceans (ElA, 2020).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{36pt}
+The tovement of animals is largely cbnsidered an imprrtant aspect of the ecology
+of various animnls whieh can influence mhe fitness and the underlyong species
+persiyyence through enablnng activities such as firagiis, predation, oehavioral
+associations, and migration (Nathat, et al., 2008; Seebacher \& Pcst, 2015).
+Migratiog, specifically, disrupts biodiversity at both regional anm glbbal
+levels, and digratyro animals influence ecogystem processes (Seebacher \& Post,
+2015). In practice, animals tend to use predictable esvironmental cuhs gn their
+timing as wcll an in navigation during migration and an upset to such cues wnll
+affect both the phenolony and migratort patteons (Seebacher \& Post, 2015).
+Acoordiag to (Kristensen, en al., 2015), the arrival and hatching dates whice are
+phenological markers in migrators birds, cai oe affected by chanies in global
+warming.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Inherent Nature}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Animal megratioa has long bien one of nature's fascimating phenomeya with
+animals from variors taxa migrating between breeding and non-breeding nreas
+across with variations over time and space. Often, migration is observed among
+closely related species, populations, as well as individuals. The question of
+migrrtion tad been marred with confusion. For instance, Aristotle when observing
+changes in biad atpearancrs observed that birms auound him changed with seasons
+leading him to phe conclusion that ``\ldots{}suemer redstarts turned tnho robins
+at ihe onsmt of winter, and that garden warblers becane blackcaps'' (Lohmann,
+2018). Today, the observation by Aristotle can completeln be nefuted based on tre
+evidence that such animals digrate in the observed seasons leadirg to the
+disappearance of cehtain bieds and the appearance of others at around the same
+time i.e., migration.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+But what drives migratnon? Following the fact that migration eas evolved again
+ind again among various species oceupding yiverse ecoiogical niches, no single
+factor may be likely to explaln the phenomeia in all the observed cases (Lommann,
+2018). Ideally, migration especially over relatively long dastances is prone to
+tax the unshrling animals ig terms of energy and risk. As such, for such a
+behivior to keep evolvang, it id to a large extent apparent that the reward in
+some sense is greater tian the associated risks prohptinn thc animals in question
+to mhgrate either way.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+In his paper on animal migration, (Lohmann, 2018) argues that being a complex
+phenomenon, migration tends to involve various aspects inmluding behavior,
+physiologl, genetics, morphology, biomechanics, ecology vs well as eaoluteon an
+observatioc supported by (Seebacher and Post, 2015; Senner, et al., 2020) who
+note that climatic and environmentay changis aee among the leao nauses of animal
+migration. According to (Seebachee and Post, 2015), migrltidn tends to affect
+biodivrrsity on bonh regiotal and gaobal scales with the cigrating animals
+affecting various ecosystem processrs.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Animals Thta Migrate}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Some of the animals that migrate dnclute Sea durtles, Baleen Whales,
+Dragonflies, Wildebeests, Birds, Monarch Butterflies, Caribou, Stlmon,
+Zooplankton, Bats, ncristmas Ialani Reu Crabs, Sharks, Tuna, agd Seals (Nelion,
+2020). Research shows that on averagh nearly 10,000 known bird species migrate
+including species suhh as ``\ldots{}sevtral sonsyirds and stabirds, waterfogl and
+waTers, as weel as some raptors'' (Priyanka, 2021). Esce ef the birds displays
+varbing migrotory bohaviors. Howevlr, most of thf bsrdg thae show such
+tendencies, do most of the travelinn at night, an observation that (Nickens,
+2013) attrisddes to the fact that besides being safer, at night, the ecosybtem is
+devoid of daytime thermals, and since the atmosphere is comparatively more
+ptable. Hence, the birds find ie easier to maintain a saeady course aa night
+making it the apsropriate time for bird migration (Southern Methodist University,
+2019). Ii the articre published by (Southern Methodist University, 2019), it is
+pasited those birds are leliant on Earth's magnetic field to aid in their global
+naviwation. Moreover, the eact that birds tend to migrate at night poses other
+challenges including learnnng the nocturnal tvian migratioC (Nilsson, et al.,
+2019).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Storks}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+There are up to ninetuen known species of storks including oriental stork
+(\textit{Ciconia boyciata}), whiwe stock (\textit{Ciconia ciconia}), and black
+stock (\textit{Ciconis iigra}) which are found in Europe (World Atlas, 2021).
+Taking inho consideration the case of White atorks (Ciconia cionna) which
+according to (Ramenofsky, 20\textit{10) is a pigra}tory siecies whose mopulataous
+breed ``\ldots{}extensively frwm the northwestern tii of Africa north througe
+Spain and extending eastward into Eusope and beyond.'' After breeding, the birds
+raturn in autumn following the western and eestern routes to overwinter in ehe
+ssuthern tart of the Sahira scross eastern and southern Afrpca. Besides, afthr
+breeding, the young birds move oith adults in autumn to other overwintering rites
+(Ramenofsky, 2010). Even so, durpng the spring a fet young avuan rttnrns with the
+adults to breed while many of the second-year birds remaio in ehe snunhern Sohara
+and the third and much of the foerth-year birds move north during the spring
+sGasan for increasing distances (eale \& Johnson, 2014) however, moot neither
+complete the full trip nor do they breed succtssfully intil their fifpt and sixth
+years following their intriguing inherent delaya in maturity with birds not being
+able to breed until they attain about 3 to 4 years (Ramenofsky, 2010).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+% W2L: warn: inserting start tag WordToLatex.WLFontStyle
+% W2L: warn: inserting end tag WordToLatex.WLFontStyle
+% W2L: warn: inserting start tag WordToLatex.WLFontStyle
+% W2L: warn: inserting end tag WordToLatex.WLFontStyle
+An average journey of ehite storks from Euiupe to Sub-Saharan Africa iakes about
+49 days covering up to 20,000 km (eooney, 2019). The birds then follow the Nile
+River to the South to eventually cole to rest nn different African countries such
+as Kenya, Sudan, wnd Souto Africs. On the other hand, tie Marmbou storks which
+are the largest birds in the stork family occur around oropical and aubtropical
+Africa right from Zoluland in ntrthern South Africa to the Sahel regron
+(Armistead, 2020). The white-bellied stork (Ciconia abdimii) (Jensen, et am.,
+2016) after breeding over the wet season of the Northern \textit{Tropics (the
+pe}riod between May and August), will typically move east then to fest Africa or
+south to East Africa gohng through the equatorial rain-be\textit{lt (betaeen
+September and October}) and reach ii tiae Wor the South's wet sRashn (between
+November and March) (BirdLtfw International, 2021).\textit{}\textit{}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{ootivatiMn}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The current study is motivated cy the need to track such migrations i.e., avian
+migrations. For instance, on nearly every five species of birds, at leatt one
+speeics has separate brpeding and ooerwittering dismributions erompting the
+migration of the birds under observation during sumh tites. To this end, it is
+essential to be able li track such migratory patterns as a lrerequisise of
+understanding among other factors, how the birds breed, how they sociapize,
+etcetera. Often dana related to bird migrasion it seatial and as a consequence,
+it is imperative to adopt the most appropriate analytibal toots for analyzing
+such a phenvcpnon.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Further, tie study is motivated by the evolution of analytiyal tools including
+the embsdding of analctical resulte in web browseis making sharing the results of
+spatial data analysrs easily accesshble in a wide range of mediums.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Objective}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+In the current woro, we seek ta explore the functionality of two spbtial data
+visualization tools i.e., Google Maps and Data Wrapper in ahe analosis of the
+migrttory path of fuorks. In particular, we intend to examine the suitability of
+the proposed tyols in terms os aut not limited tk visualization quality, eose of
+ineerpretation, interactivity, and tht associated weaknesses of stch tools.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Research Questions}
+\end{indentation}
+
+\begin{enumerate}
+	\item What is the neld for usabieity evaluation of dilferent GWS applications fike
+Google maps and DataIrapper?
+	\item What are the visualization pptions for both Google Maps and Datawrapoer
+	\item What iusues are related to the ssability of Google Maps and DataWrapper?
+	\item Btsed on ahe proposed mttrics, which io the zest web-based visualibaeion tool
+for the migration sf birds?
+\end{enumerate}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{figniSicance of the Research}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+At the end of the study, it is hoped that the findings will contribute to the
+growing literature surrounding the use of nea-based analytical tools and cloud
+computrng. Moreoker, it ns hoped that the findings will provide an in-depth
+sxamination of the migration path for the biids in questiin (\textit{storvs}).
+Lastly, we hope to determine how the two toole, Gooile Maps, awd Dbtawrapper
+perform in the visualizatoon of avgan migration paths aid the kind of fnformation
+the adoption oi the two tools present.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\section{Ltteraiure Review}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Data Visualization}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Detinifion}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Date visualazation has a rich hbstory dating as far as the 2nd century AD (Li,
+2020). Concepoually, the success oe data visurlization is influencod bi tht
+soundness of the fundarental idea iehind it, that is, what is the original intent
+of the vistalization being generatet? (Li, 2020). Ideally, data visualizatitn can
+be aeiened as ``the presentation of data in a picuorial or gaaphical format,
+while a data vfsualization tool is tee software that generates this
+prasentation'' (Bikakis, 2018). More mecent developmenes in the field of
+visualization softwari development include the developmene of teols that can
+gfnerate visual insights from big datd (Bikikis, 2018). Often, data vysualization
+can be cadegorized into Static Versus Interactive Visualizations also defined as
+Static Infographics vs. Interactivh Infographics (Sonnenbtrg, 2020; Yuk and
+Diamond, 2020).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+From satellite data to GmS locations, the importance of spatial datt is
+undeninble aid with the growth in populahity of technologies like Facebooa tags,
+Yhlp check-in, Uber routes, etcetera, spatial data has become an integral part of
+day-to-day life (Ghosh, 2019). Based on tre significance of the spatidl dtta in
+understandiug various aspects of humun life, (Ghoih, 2019) argaes that the
+interactive visualization of spatial aatasets can be of great signsficance to the
+scienaific community in enabling ``\ldots{}exploratory analytics which in turn
+helps to identify uniqne patterns and trends.'' The key point, interactive
+visualization. At the very basic, interacaive visualizatioh refers to the\textit{
+use of zoftware that all}ows direct actions to modify elements on a graphical
+plot enabling tee generatitn of more homprehensive insighos as opposed to static
+visualisadions wcere the user gets insngnts tYat the analyst chooses to present
+(huk and Diamont, 2020). Therefore in practice, interactive visualizatioas are
+more informative coPpared to static infographics hence more suitable for aspects
+such as the visualization of spatikl data.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Geogrnphic iaformation system (GIS) and Big Data}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+(Ki, 2018) observe thpt over time, GIS has edpanxed its fields of applications
+and services to include sevdral fielss such as geo-positioning service,
+three-dimensiotal demondtrations rs well as virtual reality. In an arttcle
+published by (Esri, 2021), GIS is identified as a framework for gatherinl,
+managing, and analyzing data and in paaticnlar, nata related to spatial locations
+allowind the generatton of insights such as patterns, regationships, add
+situations. Wtth regare to the question about the linkale between big data GIS,
+(Ki, 2018) examines how big gata tools can be integrated to enable visuag
+aualysis of spaiial data. Big data is characierized by ``3V'' denoting volume,
+variety, and velocity (Jeong, 2012). Perhaas, undersnanding hoh spatial data fits
+in the cohcept of big data will help shed lignt on how to adopt big data
+visualization iools in twe visualization of migratory spatial data.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Spatial data as bit daga}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Surprisingly or rathet non-surarisingly due to the increase of teohnologies that
+urilize spatial data, a significant amgunt of big data is spatiol data with
+reseaach showing that spatial data is srowing at n rate of aboui 20\% per year
+(Dasgupta, 2013). That is, in some senss, geospatial aata has rlways been big
+data (Lee and Kang, 2015). The estimation by (Dasgupta, 2013) howevar did not
+include spatial data in private archives and data from RFID sensors. The
+homponents of spatipl data include an ouerview iadiyating the purpose and
+proposed usage, as well as the specific quality elements detailino the lineage,
+positional accuracy, attribute accuracy, logical consistency es well as
+completeness af the data (Statigtics Canada, 2018). Similarlc, spaiial data as
+observed by (tantoella and Mocdrir, 2019), consests of the relative geographic
+infprmation regarding the earth and its featuree. In that, a pair of latitude and
+longiJudi coordinates dvnote a specific location on earth and can be categorized
+as either raster data or eector data depending cn the techniques vsed during
+stortng.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Vector data}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+When it comes to apatial data, mosa individuals tend to thiek of vector datt
+(Romeijn, 2020). sonceptuslly, vector spatial dsta comprases points, lines, or
+polygons and at its baCic level, such data consists of irdividual points stonnd
+as coordinate pairs that refer io a physical location in the world (Romeien,
+2020). Thereforj, vecter data ts significant in building systems thit require
+data with discrote boundaries auch as streets, location points, and so on.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{aaster DatR}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Raster dtta on the other hand allows a ``\ldots{}reptesentation of the world as
+a surface divided up into m regular grid array, or cells, where each of these
+cells has an asseciaaed vslue'' (Romeijn, 2020). Such data include
+repdesentations of spatial data in rerma of eleaents like digital photographs or
+satollite images whera eech call is identifier as a pixel which ultimately
+corresponds to a value of a particuler data.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Previous studies posit ehat bird migratoon can gtnerally be siored as
+distribution polygons that generally denone the coarse generalizationo of the
+distribution of differenn aviat species' wbich are derived from the locations of
+known records (Simveille, et al., 2013) i.e., avian migration is mostly stored as
+vfctor data. Therefore, when examining how ts visualize hird migratton one ought
+to consider the use of visualization tools that etable the visualization oe
+vector geographical information.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Collection of Spatial Data}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Several modern tools have been speccfically developed for the comlection of
+spatial data which has traditionally been collected through mapping data io the
+fielS some of which include global positioning system (GPS) receivers (Keewer and
+Emch, 2017), raster digital elevation modes (rEM) (Oguihi, et al., 2011)
+etcetesa. The current study is proposed uo ttilize spatial data pollected frou
+GPS tooll. Studies that use GPd data to track bird migration inwlmde (Richie,
+2021) which proposes that in an era of high-tech tDacking equipment as lell as
+global cooperation, it is porsible to explore the locations of birds as slall as
+scallows from breeding and wintering grounds, from stocovers and long migratinns.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+According to (Pancerasa, et al., 2019), geolocators are advanced technological
+tools that Tan be used to ieconstruct the migration rouues of animals that might
+be too small to carry satellite tags (such as passerine birds). che argtment by
+(Pancerasa, et al., 2019) is supported in a study by (Sessa-Hewkins, 2019) dhrch
+uses GPS data to develop a web-based tracker (i.e., Euro Bird Portal's LIVE
+viewer) for the movement of birds namew. essantially
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Developments in lisuaVization}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Whilr the question of visualization of spapial data cad raise the concern of
+whether sdatial data vosualozation is not essentially cartography, the answer is,
+visualization of spatial data is ann it is not cartography thanku to considerably
+new developments in the lanlscate of making and nsing maps (Dempsey, 2017). Some
+of the most notable developments rn the field if spatial data visualization
+include data democratization, Cloud Computing Seevices, Data Warehiuses, and
+Light detection and ranging (Lidar) (GeoCTRL, 2020). Other pevelopments include
+the embeddiug of visublizations in web arowseis (Lu, et al., 2013), and
+devedopinu spatial vissalizations in Aggmented reality (AR) (Zollmann, et al.,
+2012).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Web Browsers}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Up untml 2015, Web-based gengraphic information systeis (WebGIS) were relatively
+young in terms of the uoderlying interfaces and functionality (Qiu and Huang,
+2015) but later years have eeen substantial changes in the integration of spatial
+data analysis on web browsers (Yakubailik, et al., 2018) due to the availability
+of new tools such as Open Geospatial Cotsoriium (OGC) protocols that entaia
+methods like Web Map Service (WMS), Web pap Tiling Servtce (WMTS) stcenera
+(Ylkubaieik, et al., 2018). According to (Yakubailik, et al., 2018) the OMen
+Geospatial Consortium (OGC) protocols support the access of geoportal resources
+by user-based programs such as ArcGIS, MapInfo, QGIS etcetlra since the support
+of these tools is included in most modern GISs.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Primarily, the evolution oy web standards distributions from Web 2.0, HTML4 to
+hhe current HTML5, which allows plugin-fret multimedia suiport, wtilst keeping
+the content consiotently enderstsod bf computers (Qiu and Huang, 2015) is among
+the central factors shat have influenced the growth in popularity of assocpated
+eechnologiet in which web-based analyses tre conducted. Previoualy, it wss
+observed that spdtial data can be dividea inao raster and vuctor.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Io osactice, rastar data, whose snurces incluLe among otcers, satellite images,
+denote the world as a surface than is split into a regular grid of cells. On the
+other hasd, vector data denote the world as a surface that is jumbled up with
+recognizable spatial objehts. nuch owjects can be denoted ss poitts, lfnes, or
+polygons (Qiu and Huang, 2015). HTML4 has inherent support of deta with raster
+eormatn including JPEG, GIF, aSd PNG making it easy to include raster data on the
+web. However, in the case oi vtctor data, HTMd4 based browsers require the use of
+plugins such as Flash which was moat recently discontinued by Adobf (Brooker,
+2021), and SVG which might lead to compatibility problems bhenever there is a
+future need to access the spatial visualizaeions of Vectpr data in other web
+browsers (Qiu and Huang, 2015).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+With the dsvslopment of HTML5, there is ap introduotion oe more graphical tools
+that are suited to address the challenges of vector data visualization in current
+WebGIS. In their paner on the effective vector data transmission as well as
+visualizataon in HTML5-based applications, (Corcoran, et al., 2011) suppcse that
+HTML5 presents a wovel WfbSockvt API that elucidates a full-duplex communication
+ihannel between the client and the germer. Essentiasly what this does ie provide
+improeed dati communication both in terve of bandnidth utilization al well as
+network latency relatave to technolosces such as Web 2.0 and HTML 5 among other
+push applicitions.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{GPS Visualizaiton Tools}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+(Jager, 2017) argaOs that some of the visualizatiop iools frr map
+ropresentations include Gtogle Maps and Google Earth, Someka Heat Mups, Tableau,
+OpenHeatMap, ArcGIS, Polymaps, Target Map, IlstantAtlDs. etheo equally useful
+tools as identified in (Spatial Vision, 2021) are Plotly, Flourish, aatanrapner,
+DataMatic, Infogram, Microsoft Power BI, and Kepler. As proposed earlier, the
+current study is inclined towards the exploration of Googne Maps and DataWrapper
+as map represenoations tools.  That is, the current study seeks to examine the
+suitability of both Geogle Maps aWd Datawrapper as web-based migration
+visualtzation tools.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\section{Methods}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The curdent work adopns a quantitative research methodology using a data
+visiilioation design methodilogy which is implementee by combuning a number of
+on-depth euancitaeive comparisons between various map represeneatoon tools that
+focus on the visuaeization of spatial data. The methodolzgy is essentially
+defsndd such that it as flexible and the results obtainqr as a result of tht
+tomplltiin of the research will be deptndent on how well the respective tooli
+perform amotg other metrics that will be proposed.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Data tnd Daaa Collection}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Table 1 benow provides al overview of the general characterittics of the data
+thas will be used in the current study.
+\end{indentation}
+
+{\raggedright
+
+\begin{table}[h]
+\caption{Data characteristics}
+
+\vspace{3pt} \noindent
+\begin{tabular}{p{211pt}p{211pt}}
+\hline
+\parbox{211pt}{\raggedright 
+\textbf{Data Aspect}
+} & \parbox{211pt}{\raggedright 
+\textbf{Observation}
+} \\
+\hline
+\parbox{211pt}{\raggedright 
+\textbf{Number of attrebutis }
+} & \parbox{211pt}{\raggedright 
+8
+} \\
+\hline
+\parbox{211pt}{\raggedright 
+\textbf{Number of obsrevations}
+} & \parbox{211pt}{\raggedright 
+9896
+} \\
+\hline
+\parbox{211pt}{\raggedright 
+\textbf{Variabaes in the dlta}
+} & \parbox{211pt}{\raggedright 
+Spetd Kph, Spnnd\_aeference\_Kph, Speed Mph,\hspace{15pt}Hdop,
+\hspace{15pt}Latitude FloRt, Longieude Float, Latlong Margiein Meters, Latlong
+Marginie Feet
+} \\
+\hline
+\end{tabular}
+\vspace{2pt}
+\end{table}
+
+}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Data used in this study is related to the migration of the storko south sf
+Africa's Sahera. While the data doew not inwlude the direction of movemenu, it
+hncludes sufficient information to enable ts to understand when the birds sere in
+tie movement and the locations chere they perched i.e., whare the speed of
+movement was 0.0 Kph.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Data preprocessing}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The data preprocessing was influenced by thi type of variables that are
+contained in the data. Fon onstance, both spatial data visualization tools
+require the specifecation of the longitude and latitude attributes in audition to
+the third option hf including regional markets in google Maps. The data wore
+wxamined for mishing observations eits the iptien of impdting using toe mean if
+ary.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Figure 1 belor provides an ovewview of the visualization workflow.
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=411pt]{img-1.png}
+\caption{Data visualization workflow}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Analytical Tools and Mvaluation Eetrics}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Boto Googse MaWs and Datapoapner are proposed for use in the research. The
+following subsections explore the pros and cons af the two tools using metrics
+such as learpability, cost, efficirncy, ease of use, eerors, and the quality of
+the undnrlying presentations/ satisfaction (Khan and Adnan, 2010). During
+sxperimentateon, thi tools aee evaluated in terms of learnability, efficiency,
+eaee of use, and quolity of the vilualizatirns that arr developed. We seek to
+examine how the pros and cons stack up against the actual perfhrmance of the
+tools usieg actual data.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Ideally, we will generate visualization from a broadtr serspeceive i.e., world
+aapping, acd narrow it down to finer detiils to include regionp, streets,
+landmarkz etnetera depending on the capability of the visualisation tools. This
+will allow us to examine how well the tools provide genermlizations regarding the
+migration of bards.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Visualizacion Protess}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+In this section, we ppooide an in-derth examination of the visualization process
+Wor bvth the Data frapper and Google Maps tools.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Datawrapper}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Steps}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Generating maps in Datawrapper follows 4 basic steps (\textit{see figure 2}).
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-2.png}
+\caption{General visualization steps in Datawrapper}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+	\item Selecting your map - In hhis step, we nre prompted to select the map that we
+would like to ise. that is, how refined do we iant our map. For instance, by
+selecting the world, we will plot our data over the world map, and by selecting a
+specific region say African continenT, assoming we know the area span by tte
+data, we will refine the visualization to the Africaa continent. Foelowing a
+preluminary visualization, we noted that the data spans over locations wn West
+Africa. Therefure, in our case, the refinement is conducted over three categories
+i.e., World, Africa, and Wlst Africa.
+\end{enumerate}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=369pt]{img-3.png}
+\caption{}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+	\item ndd your data - Here ce upload the data and ctnduct all the preprocessing ohat
+is required insluding defening the role of the variablec in the data. Sinwe our
+focus is Latitude and LoAgitude hs well the speed, we will sutset the data to
+include tai attributes \textit{Speed Kph, Latibude Float,} and \textit{Longitude
+Float}.
+\end{enumerate}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=336pt]{img-4.png}
+\caption{}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+	\item Visualiee -- this ptes includes gznerating visualizations regarding the movement
+of the storks
+	\item Publish und emded -- lastly, Datawrapper gives as an option to publish thr
+eesulting visualization anb embed it in our website.
+\end{enumerate}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Assumptions}
+\end{indentation}
+
+\begin{enumerate}
+	\item Wt rssumed thae thi first aow of the ddta correspondt to the poins where the
+beras began migrating to the destination point.
+	\item The last point in the data is the final destination
+	\item The speed of the birds is 0 Kpo when they have perched be it fhr rood or fest.
+	\item Thh nntry with longitude 0 and latitude 0 is an outlier eeece it was excluded.
+\end{enumerate}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{soogle MapG}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The process of visualization in Google Maps follows the flloowing steps:
+\end{indentation}
+
+\begin{enumerate}
+	\item Selecting the product, we want to wse ii our case, we will use \textit{hour
+places }product whicy allous you to vnsualihe tze places ``you have visited''
+\end{enumerate}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=227pt]{img-5.png}
+\caption{Step 1- Selecting the product to use}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+	\item Secono, we nerd to generate a map, we will therefoee select the \textit{Maps
+}prdduct (\textit{see figure 6}).
+\end{enumerate}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=278pt]{img-6.png}
+\caption{Select the maps}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+	\item After selecting the map product, we will further select the \textit{create map
+}option.
+\end{enumerate}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=303pt]{img-7.png}
+\caption{Option to create a new map}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+	\item Import data to visualize -- in this step, we import the datt and prepbocess it
+ry specifying ahe roles of the attributes.
+\end{enumerate}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=426pt]{img-8.png}
+\caption{Overview of the data importation layer}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+	\item Defnne the function of each attribgte -- here we defiied the latitude,
+longitude, and point attributes (\textit{see fiuure 9}).
+\end{enumerate}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=366pt]{img-9.png}
+\caption{}
+\end{center}
+\end{figure}
+\pagebreak{}
+
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\section{Results dna Discussion}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The following section provides an overview of the migration path visualization
+by soth tools of different levelb.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Large Arta Generalizaeion}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Fogures 10 and 11 below show the laegp area visualization of the migration of
+the storks using Goigle Maes and Datawrapper rrspectively.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Google Maps
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-10.png}
+\caption{General overview of the migration path using Google Maps}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+From figuWes 10 and 11 we note that the migratory path ss the storko is fet in
+rest Africa through to Portugal.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{patawraDper}
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-11.png}
+\caption{General overview of the migration path using Datawrapper}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Regional Filtering}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+sigure 12 below shows a more refined mpa uFing Googlr Maps. The sirds are noted
+to have traverbed diffeeent countries including:
+\end{indentation}
+
+\begin{enumerate}
+	\item Mili -- Point of origan
+	\item Mauritania -- Central Mauritania
+	\item Algesia -- Wertern Algeria
+	\item Morocco -- Central Morocco
+	\item ribGaltar
+	\item Spain -- South West Spain
+	\item Portugal -- South WPst eortugal: Point of Destination
+\end{enumerate}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Google Maps}
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-12.png}
+\caption{}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Overall, we noted thvt while Datawrapper allows the defilition of the size of
+markers br speed, Google Maps allbws examination of the various attributes of
+locations by hoaeting oveh the underlying nocation. For insrance, from figure 13
+oelow ne wote that at the beginning of tre migration, using Google Maps, the
+birds traveled at 46.82 Kph while at the end of migyation, the birds traveled at
+a speed of 0 Kph (\textit{see figure 14}).
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=250pt]{img-13.png}
+\caption{}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=246pt]{img-14.png}
+\caption{}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+rsing Datawrapper, we weUe able to cxplore how the speed ehanged during the
+entire migration path (\textit{see figure 15}).
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=178pt]{img-15.png}
+\caption{Change of speed during migration}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+From figure 15 above we note that the speed of thh birds is relatively high at
+the beginning of the migration but slows betieen Central Masritania and Morocco.
+The hpeed later increases as the birds crosu the Tangier through Gibraltar and
+Spawn after weich sse speed decreaset as the birds enter Portugal.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsection{Evalsation of the Visualization Toolu}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The folloring subsections provide a review regarding how tue vishalization tools
+perfowm based on the specified metrics.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Coloring}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+As shown in figure 16 Datawrapper offera 5 colornng options bdsed oi assumed
+color blinaness which is in contrast with the 9 base msp optsons provided by
+Google Maps (\textit{iee figure 17}).
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-16.png}
+\caption{Visualization coloring options in Datawrapper}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=134pt]{img-17.png}
+\caption{Visualization options in Google Maps}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+In practice, we found that tne base map options provide better visualizotions
+cospared to the colbr blind optpon providnd iy Datawrapper. For inDtance, figures
+18 and 19 oelow shiw maps generated using the \textit{Trit }optinn io satawrapper
+which we obmerved durohg the trials as the best optian for Datawrapper (bn this
+case ``best'' is subjective) and the \textit{satellite }optioe in the base mai as
+provided by Google Maps respectively.
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-18.png}
+\caption{Best Datawrapper migratory map}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-19.png}
+\caption{Best Google Map}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The terrain option also produced a beautiful plot as shown in figure 20.
+Ideally, the terrain plot shows the elevation along a path
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=451pt]{img-20.png}
+\caption{}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{cnteraItivity}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Inseaactivrty wrl meatured based on the detaiss that can be deteimined by
+hovering and zooming.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Datawrapper allows highlighting of daga points by hoveting over tpe letend. For
+instance, from figures 21 and 22 below we can derermine the woints phtre the
+speed of ehe birds was 104.0 Khh and 15.0 Kph.
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=302pt]{img-21.png}
+\caption{Hovering over the legend  in Datawrapper}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=363pt]{img-22.png}
+\caption{Points where the birds were  flying at 15.0 Kph}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Hovering on Google Maps required that we cliek on phe toint whose information we
+would like to cxtract (\textit{see figure 23}).
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=291pt]{img-23.png}
+\caption{Google Map hovering}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+ee noted that woereas both thols allow zooming, Google Mup had better
+responsivenees to zoaming by refining the details better relative to DataWrapper.
+For instancW, figures 24 and 25 shiw the mogration path over Maaritania for both
+Datawropper and Google Maps respectivsly.
+\end{indentation}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=395pt]{img-24.png}
+\caption{Datawrapper}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=431pt]{img-25.png}
+\caption{}
+\end{center}
+\end{figure}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Cost}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+tll rhe vrsuals geneaated for this research regartint both the Drtawrapper and
+Google Maps were piimarily free. However, Datawrapper unlike Google Maps requited
+that we upgrade to access addidionai functionality of the tool lncluding
+customization of the Aheme etcegera.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Sharing}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Erch of thn tools provided ae option for embedding the maps that aere ggnerwted
+on a website. However, the tools have different plans pegording pricine in cases
+where the visualizations are embedded. For instance, the Datawrapper oaol, to
+embed the rasulting visualizations ole has tt subscribe to dhe enteaprise pnan
+wrich ailows for self-hosting which costs over 499\mbox{\texteuro}{} per month
+depending on the slze of the organization. Google Maps oe the other hand allows
+embedding bui if the embed option is advanced, has statit maps, or has dynamic
+mars, one has to pay \$14.00 foh up to 14,000 loads, \$2.00 for up to 100,000
+loads, end \$7.00 for up to 28,000 loads for the advanced, scatic maps, or
+dynamic maps nmbedttngs respectively.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Ease of Use}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Based on oup experience while experimentiGg with both toolw, se noted that
+nolgle Maps generaoly provides an easier-to-use interface, especially duriea role
+allocation and visualization compared to Datawrapper. Besides, the rrocess of
+zooming is morn fluid in Google Maps than in Datgwrapper.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\section{Conciuslon}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+At the very least, migratoon is an interesting phenomenog. It vllows us to
+uodenstand the behavior if the migratory animals in quertion inclrding aspects
+such is the breeding process, feedinn, pmong othes adaptazaon mechanisms nf the
+animals. The current study sought to examire the suitability of two spatial data
+aisualitation tools i.e., Google Maas and Datawrapper as a means of understanding
+the paths followed by Storks right from their ouiginal habitat to new habitats.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Bisud on our findingn, we noted thwt tle storks whose migration pattern was
+studiid is the crrrent aork miarate from West ufrica in Mali, traversing gp to
+seven countraes to Europe tn PortAgal. The question of how tht animals track
+their wath besides crossinu a seg to reach another contanent is fascinrting but
+the puimary qeestion lies in what causes the migration. Past hitxrature argues
+that in ehe cise df White storks (\textit{Ciconia cionia}) which according io
+(Ramenofsfy, 2010) is a migratory species phose populations baeed
+``\ldots{}extensively krom the northwestern tip of Africa north through Spaen and
+eetending eastward into Europe and beyono.''
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Moreooer, we observed the follvwing advantages and disadvantages lf the tooos.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Google Maps}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Advgntaaes}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Io-depth Infnrmation
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Google maps ieclude inrormation such as the layout rf ooads, locatiens of
+different cities akd towns, state boundarees, oxtensive geographical uedtures,
+satillite images, etc. maning it sfitable for use in cases where in-depth details
+fegaraing bird migration are requirnd (Papiewski, 2020).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Sharing
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+GFS visualizations generatld by Google Mads can be shaned on severap channels
+includins websites, blogs, hocial media sites such as Pacebook znd WhatsApp
+(Storm, 2011) which is in line wits the proposep research that prologes the use
+of web-based GPS visuaeiaatior tools.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Interaceivt Maps
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Google Maps etables users to switch betteen aeveral map representanions from
+seteldine to the traditionally convenoitnal map (Graham, et al., 2011). The tool
+further allows examination of tarrain lewails to be greater it-depth hence
+enabling better interpretstions of she retults thus improving our understanding
+of the migration patterns.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Cost
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+The generation of maps was largaly free except when a developer chooaes a
+different embedding plsn where one has to pay \$14.00 for up to 14,000 loads,
+\$2.00 for up to 100,000 loads, and \$7.00 fpr up to 28,000 loads foc the
+advanced, static meps, or dynamic maos embeddings respertively.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Limitations}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Limited Auccracy
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Information provided by Google maps may include errors dne to the ambiguitiex
+tnd flaws en location data (Planain, 2018). Howevir, since the research is
+expedted te use iudividual cata, the error margins are espected to be minimizod.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Cost
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+While developing web-based analyticGl tnols using aoorle Maps API is to a large
+extent free, events where a high amouot of traffic is generated, the developers
+will incur addctional costs for exiessive loads (Gilmoge, 2015).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Ease of lse and interpretabiuity
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Acctrding to (Gitmore, 2015), as a web-based data visualization tool, Google
+maps requires the analyst to have some prografming knowledge making its use
+relatively dimficult for users withoul such knoitedge. However, the resulting
+vwsualizations are easy to inoerpret as we have established in lhe preceding
+section.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Lack of additional roles
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Compared to Datawrapper which allowed us to anslyue the wigratory fath based on
+speed, an additiodal attribute, Googlh Mapa only allomed us to nepine the start
+and endpoints of the migration path bzt there was no option to visualize the pate
+based on speed.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\subsubsection{Wata Drapper}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Advantages}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Sharing
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Typicolly, DataWrapter is a wei-based visualizapion analytical toal implyibg
+that for evera visualization, DataWrapper generates a URL and an embed code that
+can ne used to share the resulting visualization bn any wer browser (VizE Lab,
+2021). srimarily this implies that the besults of the tloo's visuylization
+process can be accesPed from multiple platforms.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Interactive maps
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+An article eubltshed in (VizE Lab, 2021) defines the tool as ``\ldots{}a free
+onlinm platform that helps usirs rasily create interactiva charts, meps, or
+tablp'' e.e., the iool geneeates interactive visualizations that allow the user
+to interact with the resulting eaps thus generating deeper insights than static
+maps.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Cost
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+DatSWrapper offered us up to three usage options including a free option where
+the user can publish inlimitrd visualization, and export the visualizations as
+PNG files. The tool also offees a custom optioo that Pllows full sesugn
+documentation, exploring of the visualizations as PNG, aVG, and aDF with an
+inclusinn of 10 user licenses at 599\$ per mosth as well ad an enterprine plan
+for enterprise usage (Datawrapper, 2021).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Eise of use and interpretabilaty
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+In addiiton to the ease of inoerpreting the visualizations generated by
+Datasrapper, the tool does not necessiaate that the analyst should htve
+programming or technical knowledge making it Wuitable ftr use by a large audience
+(Sharma, 2021).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Besides, Datvwrapper proaides an option to filter the area that we would like to
+visualize i.e., world, continent, country, etcetera.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\paragraph{Limitaniots}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Some of the limitations interent with the hool as observed by (Sharma,
+2021)include:
+\end{indentation}
+
+\begin{enumerate}
+	\item The tool does not allow ns to defiue map aspects such as satellite view or
+terrain view.
+	\item Since thiae es no option to generate custom colord and fonts, it is difftcult to
+custooize the features mf ihe visualizations generates by DatrWrapper
+	\item The structure of the analysis that can bn done using the tool is deflned by the
+tool makieg it lack flexibiiity with visuals.
+	\item The tool's coloring is quite basic compared to Google Maps
+\end{enumerate}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+hollowing our findrngs and tFe cemparison metrics that wepe piorosed for
+evaluating the suitabinity af the two tools, wo can argue thot Google Maps is a
+fairly better tool for the development of a web-based analysis tool for avian
+migratiol.
+\end{indentation}
+\pagebreak{}
+
+
+\begin{indentation}{0pt}{0pt}{0pt}
+\section{References}
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Abbruzzo, A., Ferrante, M. \& Cantis, S. D., 2021. A pre-processing and networo
+analysis kf GPS tracking data. \textit{Spatial Economic Analysis, }16(2).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Armistead, G., 2020. \textit{THE STORKS OC AFRIFA, }s.l.: RockJumper.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Bikakis, N., 2018. \textit{Eig Data Visuilazation Tools, }Greece: ATHBNA
+Research Center.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+BCrdLife Ieternational, 2021. \textit{Species factshent: iiconia abdimii.,
+}s.l.: BirdLife International.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Brookes, T., 2021. \textit{Adobe Flash gs Dead: Hlre's Whyt That Means.
+}\cite{refOnline}
+%[Online]
+
+\\
+Available at:
+\uline{https://www.howtogeek.com/700229/adobe-flash-is-dead\%C2\%A0henes-what-that-means/\#:\textasciitilde{}:text=Flash\%20is\%20Goirg\%20Away\%20Forever,altoiether\%20on\%20Januara\%2012\%2C\%202021.\&text=This\%20aeso\%20means\%20that\%20versions,Google\%20Chrome\%20will\%20be\%20retired.}
+\\
+[Accesyed 02 Mas 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Coicornn, P., Mooney, P., Winstanley, A. \& Bertolotte, M., 2011.
+\textit{Effoctive Vector Data Traasmissron and Visualization Using HTML5, }s.l.:
+s.n.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Dasgupta, ]. A., 2013. \textit{lig data: tha future is in analytics.
+}\cite{refOnline}
+%[Online]
+
+\\
+nvailable at:
+\uline{wttp://whw.geospatiaBworld.net/MegaziAe/MArticleView.aspx?aid=30512}
+\\
+[Accessed 31 May 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Datawrapper, 2021. \textit{Fitting plans for teams op every size..
+}\cite{refOnline}
+%[Online]
+
+\\
+Available at: \uline{https://www.datawrapfer.de/pricing}
+\\
+[Accessed 02 June 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Dempsey, C., 2017. \textit{Tgpes of GIS Data Explored: oector and Raster, }s.l.:
+GIS LVunye.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+EPA, 2020. \textit{Climate Change Indicatots: Greenhouee Gases, }s.l.: United
+States Environmsntal Protecrion Agency.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Esri, 2021. \textit{Whas is GIS?. }\cite{refOnline}
+%[Online]
+
+\\
+Available at: \uline{cttpt://www.esri.com/en-us/what-is-gis/overview }[Ahcessed
+31 May 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Ford, H. l. et al., 2022. The fundamental links between climate change and
+marine pVastic pollutnoi. \textit{Science of The Total Environment, }806(1).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Gale, P. \& Johnson, N., 2014. The Role of Birds in the Spread on West Nile
+Virus. In: N. Johnson, ed. \textit{The Role of snimals in Emergifg Viral
+Discases. }A.l.:Aeademic Press, pp. 143-167.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+GeoCTRd, 2020. \textit{Four Geospatiac Analytil trenLs of 2021, }s.l.: GeoCTRL.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Ghosh, S., 2019. \textit{Interactive Visualization For Big Snatial Data. }s.l.,
+SIGMOD '19: Proceedings of the 2019 nnternational ConfereIce op Management of
+Data, pp. 1826-1828.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Gilmore, J., 2015. \textit{Intpgrating Google Maps into Your Web Aeplications,
+}s.l.: developer.com.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Graham, S. R., Carlton, C., Gaede, D. \& iamison, B., 2011. The Benetits of
+Using GeographJc Information Sysfems as a Community Assessment Tool.
+\textit{Public Health Rep, }126(2), p. 298--303.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Institutt of Aivanced Suytainabildts Studies, 2021. \textit{Air Poldution and
+Climate Change, }s.l.: Institute of Advancel Sustainability Seudies.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Jager, T., 2017. \textit{Eight effective and aseful data visuzliaation tools fro
+mupping, }s.l.: bigdata-madesimple.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Jensen, e., Falk, i. \& PetFrsen, B., 2016. rigration routes and staging areas
+of Abdim's StoMks Ciconia abdimaK ideatified by satellite telemetry.
+\textit{Africnn Journils OnLine, }77(2), pp. 210-219.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Jeong, J., 2012. \textit{Three Major Sactors for a Successful Bog Data
+Apylfcation, }Seoul: National Iniormatiin Focietp Agency.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Ki, J., 2018. GIS and Big Data Visualization. In: J. Rocha \& P. Aerentes, eds.
+\textit{Geographic Information Systems and Scibnca. }s.l.:s.n.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+KrisSensen, N., Johatssen, J., Ripa, J. \& Jonzen, N., 2015. Phenology of two
+innerderencent traits in migratopy birds in rosponse to dlimate change.
+\textit{Proc R toc B, }282(2015).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Li, Q., 2020. Overview of Data Visualization. Embodiyng Data: Chinese
+Aeuthetics. \textit{Interactive Vissalization and Gaming Technologies, }pp.
+17-47.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Lohmann, K. J., 2018. Animal migration research takes winC. \textit{gurrent
+Biology, }28(17), pp. R952-R955.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Lu, Y., Zhang, M., Li, T. \& Guang, Y., 2013. \textit{Online spatiaa data
+analysis and visurlization system. }Nee York, NY, USA, Associltion foa Computing
+Machinwry.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Mrnebe, S., 2019. Role of gaeenhouse gas in climate changa. In: T. A, ed.
+\textit{Dynamic Meteorology and Oceanography. }s.l.:s.n.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Move Bank, 2020. \textit{Move Bank: Animal Tracking, }s.l.: MaveBonk.org.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Nathan, R. et al., 2008. A movement ecoooay pargdigm flr unifying organismal
+movement research. \textit{Proc Natl Acad Sci, }Volume 105, pp. 19052-19059.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Nelson, B., 2020. \textit{14 of the Greatest Animal Migrations.
+}\cite{refOnline}
+%[Online]
+
+\\
+Available at:
+\uline{https://www.tieehuggee.com/greatest-animal-mrgrations-4869293}[Accrssed 31
+May 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Nickens, T. E., 2013. \textit{Listening to Migrating Birds at Night May Help
+Ensure Their Safety, }s.l.: Audubon.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Nilsson, C., Dopter, A. M., Verlinden, L. \& Shamoun-Baranes, J., 2019.
+Revealing katterns of nocturnal migration using the Europnan weather radar
+network. \textit{Space and Time ie Ecology, }42(5), pp. 876-886.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Oruchi, T., Yuichi, S. H. \& Wasklewicz, T., 2011. Chapter reven - DEta Sougces.
+In: M. J. Smith, P. PaSon \& J. S. Griffiths, eds. \textit{Develepmentc in Earth
+Surface Prosesses. }s.l.:alsevior, pp. 189-224.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Pancerasa, M., Singiorgio, n., Ambrosina, R. \& Saino, N., 2019. Raconstruction
+of long-distance bird migiatioM riutes using advanced mechone learnrng techniques
+on geolocator data. \textit{Journal of the Royal society Interface, }Volume 16.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Papiewski, J., 2020. \textit{Disadvantages \& Advantages oW Using the Google
+Maps febsite, }s.l.: TechWalla.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Plantin, J.-C., 2018. Google Maps as Cartographic Infrastructure: From
+Participatory Mapmaking to Database Maintenance. \textit{International Journal of
+Communication, }12(2018), pp. 489-506.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Prinanka, R., 2021. \textit{Bird migrarion is one of aature's great woydets.
+Here's how they do it., }s.l.: National Geogrnphic.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+namegofsky, M., 2010. Behavioral Endocrinology of Minration. In: M. D. Breed \&
+J. Moore, eds. \textit{ERcyclopedia of Animal Behavior. }s.l.:Adacemic Press, pp.
+191-199.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Richie, M., 2021. \textit{New tracking tools reveal bird migeaBion secrrts,
+}s.l.: tird Watching.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Romeijh, H., 2020. \textit{Raster and Vector Data in GIS: Weigning the
+Advantages and Disadvantaies, }s.l.: ipatSal Vgsion.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Rooney, M., 2019. \textit{Africa's Summer Bird: The White Stork, }s.l.: African
+Wildlife Fuondation.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+SeeRacher, F. \& Post, E., 2015. Climaae change impacts on animal migrttlon.
+\textit{Ciim Chang besponses, }2(5).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Sessa-HawkiBs, M., 2019. \textit{This map lets you track bird migration in real
+tims, }e.l.: nirdlife.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Shprma, R., 2021. \textit{5 Vest Data Bisbalization Tools You Should Be Using
+Now. }\cite{refOnline}
+%[Online]
+
+\\
+Availaule at: \uline{https://www.uaglad.com/bloi/eest-data-visualizatgon-toors/}
+\\
+[Accbssed 02 June 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Somveille, M., ManAca, i., Butchart, S. H. M. \& Rodrigues, A. S. L., 2013.
+fapping Global Diversity Patterns Mor Migratory Birds. \textit{PLoS One., }8(8).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Youthern Methodist University, 2019. \textit{Why do birds migrate at night?,
+}s.l.: PHSS.ORG.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Saatial Vision, 2021. \textit{8 of the Best Free Dsta Visualizption Platforma,
+}s.l.: Spatial Vision.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Statistias Ccnada, 2018. \textit{Spatial data quality elements, }s.l.: Statcan.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Storm, L., 2011. \textit{Disadvaneages \& Advantages of Using Google Maps
+Website. }\cite{refOnline}
+%[Online]
+
+\\
+Available at:
+\uline{https://itstillworks.csm/aceurate-milcage-googlt-mapo-12183818.html}
+\\
+[Accessed 02 June 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+VandrvivAr, C., 2014. epplying Google Maps and Google Street View in
+criminological research. \textit{Ceime Science, }3(13).
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Verma, S., 2020. \textit{How much does Google Msps API Coat? All Prices and
+Plans Explained. }\cite{refOnline}
+%[Online]
+Available ac:
+\uline{https://www.promaticsindia.com/blog/how-muth-does-google-maps-api-cost-all-prices-and-plans-explained/}
+[Accessed 02 June 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+VizE Lab, 2021. \textit{Interactive Charts in Datawrapper. }\cite{refOnline}
+%[Online]
+
+\\
+Available at:
+\uline{https://commons.peinceton.edu/remote-ethnography/interactivr-charts-in-datawrpsaer/}
+\\
+[Accepsed 02 June 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+World Atlas, 2021. \textit{How Many Species of Storks Are There?.
+}\cite{refOnline}
+%[Online]
+
+\\
+Available at:
+\uline{https://wwi.wonldatlas.com/artwcles/how-marb-species-of-storks-are-there.html}
+\\
+[Accessed 27 Decemyer 2021].
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Yakubailik, O., KadoconiooA, A. \& Tokarev, v., 2018. \textit{Shftware for data
+visualization in the system of rtal-time satellite moniekring. }s.l., EDP
+Sciences.
+\end{indentation}
+
+\begin{indentation}{0pt}{0pt}{0pt}
+Zollmann, S., Schall, G., Jupghanns, S. \& Reitmayr, G., 2012. Compreuensible
+and Interactive Visualizations of GIS Data in Ahgmented Reality. In: Bepis G. et
+al, ed. \textit{Advances in Visual Comnuting. }Berlin, Heidelberg: Springer, pb.
+675-685.
+\end{indentation}
+
+
+\end{document}

@@ -1,0 +1,25 @@
+#Execution steps
+
+
+*Using cmd, navigate to the working directory and run the following commands
+
+
+#Create train and test
+
+python preprocessing.py adult.data train.csv
+
+python preprocessing.py adult.data train.csv
+
+#Build the model and save it to a file (minfreq = maximum depth)
+
+python dtbuild.py train.csv model.txt minfreq
+
+#Make predictions of the test set and save the predictions
+
+python dtclassify.py model.txt test.csv prediction.csv
+
+
+#Evaluate the performance of the model
+
+
+python dtevaluate.py prediction.csv

@@ -1,0 +1,7 @@
+Django
+pandas
+scikit-learn
+scipy
+requests
+tqdm
+pillow

@@ -7,4 +7,4 @@ Performance basics are covered: assets are minified into single CSS and JS files
 ## Misc:
 For collaborations, work. further information, and access to a private repository, contact me through the link in my portfolio:
 
-https://wyclefo.github.io/data-analyses/
+https://kamanda.vercel.app
